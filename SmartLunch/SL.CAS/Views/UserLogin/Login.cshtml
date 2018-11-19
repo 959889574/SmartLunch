@@ -1,0 +1,139 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录</title>
+
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href="@Html.GetCssJsUrl("/Resources/css/bootstrap.min.css")" rel="stylesheet">
+    <link href="@Html.GetCssJsUrl("/Resources/css/font-awesome.min.css")" rel="stylesheet">
+    <link href="@Html.GetCssJsUrl("/Resources/css/style.min.css")" rel="stylesheet">
+    <link href="@Html.GetCssJsUrl("/Resources/css/bscommon.css")" rel="stylesheet">
+
+    <script>if (window.top !== window.self) { window.top.location = window.location; }</script>
+</head>
+<body class="gray-bg" style="display: none; ">
+
+    <div class="middle-box text-center loginscreen  animated fadeInDown" style="top: 26%;position: relative;">
+        <div>
+            <div class="m6">
+                <h2 class="">欢迎使用智慧点餐平台</h2>
+            </div>
+            <form class="m-t" role="form">
+                <div class="alert alert-danger" data-bind="visible:isDis">
+                    <strong>警告！</strong><strong data-bind="html:fullName"></strong>
+                </div>
+                <div class="form-group" style="display:none">
+                    <input type="text" class="form-control" data-bind="value:form.customerId,event:{keyup:keyUp}" placeholder="公司名/公司代码" required="">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" data-bind="value:form.username,event:{keyup:keyUp}" placeholder="用户名" required="">
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" data-bind="value:form.password,event:{keyup:keyUp}" placeholder="密码" required="">
+                </div>
+                <input type="button" id="btnLogin" class="btn btn-primary block full-width m-b" data-bind="click:loginClick,value:loginText,enable:loginEnable" value="登 录" />
+                @*<a id="add" href="@Url.Action("saveCategorydata", "SmartEye")" class="btn btn-primary block full-width m-b">加属性</a>*@
+                <p class="text-muted text-center">
+                </p>
+            </form>
+        </div>
+    </div>
+    <script src="@Html.GetCssJsUrl("/Resources/js/jquery-1.9.1.min.js")"></script>
+    <script src="@Html.GetCssJsUrl("/Resources/js/bootstrap.min.js")"></script>
+    <script src="@Html.GetCssJsUrl("/Resources/js/core/json2.js")"></script>
+    <script src="@Html.GetCssJsUrl("/Resources/js/core/knockout-2.2.1.js")"></script>
+    <script src="@Html.GetCssJsUrl("/Resources/js/common.js")"></script>
+    <script src="@Html.GetCssJsUrl("/Resources/js/login/login.js")"></script>
+    <script type="text/javascript">
+        var url = "@Url.Action("DoLogin", "UserLogin")";
+        var loginUrl = "@Url.Action("SmartEyeHome", "SmartEye")";
+
+        $(function () {
+            $(".gray-bg").attr("style", "background-color: darkturquoise;display: block;")
+            ko.applyBindings(new viewModel());
+
+        });
+
+        //获取url参数方法
+        function getQueryString(name) {
+            var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+            var r = window.location.search.substr(1).match(reg);
+            if (r != null) return unescape(r[2]); return null;
+        }
+
+        var viewModel = function () {
+            this.form = {
+                //customerId: ko.observable(""),
+                username: ko.observable(""),
+                password: ko.observable("")
+            };
+            this.isDis = ko.observable(false);
+            this.fullName = ko.observable("");
+            this.loginEnable = ko.observable(true);
+            this.loginText = ko.observable("登 录");
+            this.loginClick = function () {
+                var self = this;
+                //if (bs.isEmpty(self.form.customerId())) {
+                //    self.isDis(true);
+                //    self.fullName("请输入公司名/公司代码");
+                //    return;
+                //}
+                if (bs.isEmpty(self.form.username())) {
+                    self.isDis(true);
+                    self.fullName("请输入用户名");
+                    return;
+                }
+                if (bs.isEmpty(self.form.password())) {
+                    self.isDis(true);
+                    self.fullName("请输入密码");
+                    return;
+                }
+                $.ajax({
+                    type: "POST",
+                    url: url,
+                    data: ko.toJSON(self.form),
+                    contentType: "application/json",
+                    beforeSend: function () {
+                        self.loginEnable(false);
+                        self.loginText("正在登录...");
+                    },
+                    success: function (d) {
+                        if (d.status == "success") {
+                            self.loginText("登录成功");
+                            setTimeout(function () {
+                                self.loginText("正在跳转...");
+                                location.href = "@Url.Action("Index", "Admin")";
+                            }, 500);
+                        }
+                        else {
+                            self.loginEnable(true);
+                            self.loginText("登录");
+                            self.isDis(true);
+                            self.fullName(d.message);
+                        }
+                    },
+                    error: function () {
+                        self.loginEnable(true);
+                        self.loginText("登录");
+                        self.isDis(true);
+                        self.fullName("登录失败，请稍后重试！");
+                    }
+                });
+            };
+            this.keyUp = function (o, e) {
+                var self = this;
+                if (e.keyCode == 13) {
+                    $("#btnLogin").focus();
+                    self.loginClick();
+                }
+            }
+        };
+    </script>
+</body>
+</html>

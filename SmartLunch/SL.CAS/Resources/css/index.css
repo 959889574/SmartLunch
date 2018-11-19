@@ -1,0 +1,289 @@
+*{
+    margin: 0;
+    padding: 0; 
+    list-style: none;
+    font-family: MicrosoftYaHei;
+}
+.selectImagcontainer{
+    width: 100%;
+    height: 100%;
+    padding: 20px 0;
+}
+.Layout{
+    width: 1000px;
+    margin: 0 auto;
+}
+.headselectType{
+    margin-bottom: 20px;
+}
+.titleTxt{
+    line-height: 80px;
+    font-size: 16px;
+    color: #666;
+}
+.selectType{
+    display: flex;
+    flex-wrap: wrap;
+}
+.selectType .typeItem{
+    width: 100px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 14px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    color: #666;
+    border: 1px solid #d9d9d9;
+    cursor: pointer;
+}
+.selectType .typeItem.active{
+    color: #4396e8;
+    border-color: #4396e8;
+}
+.ruleShowArea{
+    margin-bottom: 20px;
+}
+.ruleShowArea .imgExample{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    position: relative;
+    border: 1px solid #efefef;
+}
+.positonTxt{
+    width: 46px;
+    height: 22px;
+    background-color: #e7222f;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    line-height: 22px;
+    position: absolute;
+    top: 0;
+    left: 0; 
+}
+.ruleShowArea .ruleTitle{
+    font-size: 16px;
+    color: #666;
+    line-height: 70px;
+}
+.imgExample{
+    display: inline-block;
+    vertical-align: top;
+}
+.middleTxtArea{
+    width: 230px;
+    display: inline-block;
+    margin: 0 85px;
+    vertical-align: top;
+}
+.middleTxtArea .textList{
+
+}
+.textList .textItem{
+    font-size: 14px;
+    color: #333;
+    line-height: 35px;
+}
+.QRcodeImgArea{
+    background-color: red;
+    width: 350px;
+    height: 180px;
+    display: inline-block;
+    vertical-align: top;
+    float: right;
+}
+.bottomErrorShowImg{
+    margin-bottom: 70px;
+}
+.errorAreaTittle{
+    color: #666;
+    font-size: 16px;
+    line-height: 70px;
+}
+.imgLists{
+    display: flex;
+    flex-wrap: wrap;
+}
+.imgLists .IMGitem{
+    width: 160px;
+    height: 180px;
+    position: relative;
+    border: 1px solid #efefef;
+}
+.imgLists .IMGitem img{
+    width: 160px;
+    height: 160px;
+}
+.imgLists .IMGitem .textExplain{
+    height: 20px;
+    width: 100%;
+    font-size: 14px;
+    color: #333;
+    line-height: 20px;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.imgLists .IMGitem .textExplain img{
+    width: 18px;
+    height: 18px;
+    vertical-align: text-bottom;
+}
+.IMGitem{
+    font-size: 14px;
+    color: #333;
+    margin-right: 30px;
+    margin-bottom: 40px;
+}
+.bottomBtnArea{
+    /*margin-bottom: 80px;*/
+}
+.bottomBtnArea .bBtnTitle{
+    width: 296px;
+    font-size: 16px;
+    color: #666;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 30px;
+}
+
+.bottomBtnArea{
+    margin-bottom: 40px;
+}
+.bottomBtnArea .ButtonUp{
+    width: 106px;
+    height: 37px;
+    color: #fff;
+    text-align: center;
+    line-height: 37px;
+    background-color: #4396e8;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+
+.uploadImgModule{
+    width: 100%;
+    height: 150%;
+    background-color: rgba(0, 0, 0, .3);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.uploadImgModule.hide{
+    display: none;
+}
+.uploadImgModuleContent{
+    width: 800px;
+    height: 554px;
+    background-color: #fff;
+    padding: 36px 30px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 5px;
+    position: relative;
+}
+.uploadImgModuleContent .MTitle{
+    font-size: 16px;
+	line-height: 24px;
+    color: #666666;
+}
+.uploadImgModuleContent .MTitle.active{
+    color: red;
+}
+.showImgArea{
+    display: flex;
+    flex-wrap: wrap;
+    height: 345px;
+    overflow-y: auto;
+    padding-top: 20px;
+}
+.showImgArea .showImgItem{
+    width: 140px;
+    height: 140px;
+    border: 1px solid #efefef;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    position: relative;
+}
+.showImgArea .showImgItem img{
+    width: 100%;
+    height: 100%;
+}
+.showImgArea #UpLoadImg{
+    border: none;
+    cursor: pointer;
+}
+.showImgArea #UpLoadImg img{
+    width: 100%;
+    height: 100%;
+}
+.showImgItem .iconClose{
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(50%,-50%);
+    cursor: pointer;
+    display: none;
+    z-index: 666;
+}
+.showImgItem .iconClose.show{
+    display: block;
+}
+.showImgItem .iconClose img{
+    width: 100%;
+    height: 100%;
+}
+
+.Layout{
+    width: 1000px;
+    margin: 0 auto;
+    margin-bottom:5rem;
+}
+.headselectType{
+    margin-bottom: 20px;
+}
+.bottomAreaCON p{
+    font-family: MicrosoftYaHei;
+	font-size: 14px;
+	line-height: 24px;
+	color: #666666;
+}
+.bottomAreaCON p span{
+    color: red;
+}
+.bottomAreaCON .distinguishBtn{
+    width: 106px;
+    height: 37px;
+    line-height: 37px;
+    text-align: center;
+	font-family: MicrosoftYaHei;
+	font-size: 14px;
+    color: #ffffff;
+	background-color: #4396e8;
+    border-radius: 3px;
+    margin-top: 19px;
+    cursor: pointer;
+}
+
+.closeUploadImgModule{
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    cursor: pointer;
+}
+.closeUploadImgModule img{
+    width: 100%;
+    height: 100%;
+}

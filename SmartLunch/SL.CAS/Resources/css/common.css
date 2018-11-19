@@ -1,0 +1,65 @@
+@charset "utf-8";
+html,body{ width:100%; height:100%;}
+html{ font-size:62.5% ;  }
+body{  font:12px/150% "Microsoft Yahei",Arial,sans-serif; word-break:break-all;  color:#222;  }
+img { border: 0 none; vertical-align: top; }
+input,button{ border:0 none; font-family:"Microsoft Yahei",Arial, sans-serif; }
+input,button,select,textarea{outline:none}   
+input[type=radio], input[type=checkbox], input[type=button], input[type=file]{ cursor:pointer;}
+textarea{resize:none}
+a{ color:#000; outline:none;}
+.color0{color:#000;}
+.color3{color:#333;}
+.color6{color:#666;}
+.color9{color:#999;}
+.colorTip{color:#9c7c40;}
+.red{ color:#e22a40;}
+.brown{ color:#9c7c41;}
+.w186{ width:186px; margin:0 auto;}
+.w200{ width:200px; margin:0 auto;}
+.w970{ width:970px; margin:0 auto;}
+.w1010{ width:1010px; margin:0 auto;}
+.w1120{ width:1120px; *width:1120px; margin:0 auto;}
+.w1160{ width:1160px; margin:0 auto;}
+.w1200{ width:1200px; margin:0 auto;}
+.w1424{ width:1424px; margin:0 auto;}
+
+
+.color0{ color:#000;}
+.color3{ color:#333;}
+.color5{ color:#565656;}
+.color6{ color:#666;}
+.color9{ color:#999;}
+.color10{color:#886600;}
+.colorRed{ color:#9a1221;}
+.colorBlue{ color:#102692;}
+.colorGreen{ color:#0fa10f;}
+
+.color8f{ color:#8f8f8f;}
+
+
+::-webkit-input-placeholder { color: #999;}
+:-moz-placeholder { color: #999;}
+::-moz-placeholder {  color: #999;}
+:-ms-input-placeholder {  color: #999;}
+
+/*文字溢出限制*/
+.ellipsis{overflow: hidden;text-overflow: ellipsis; white-space: nowrap;}
+
+/*清除谷歌浏览器下的 search 叉号*/
+input::-webkit-search-cancel-button{
+  display: none;
+}
+/*清除IE下的 search 叉号*/
+input[type=search]::-ms-clear{
+  display: none;
+}
+	
+	
+
+	
+	
+	
+	
+	
+	

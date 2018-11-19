@@ -1,0 +1,6 @@
+D:\SmartLunch\SmartLunch\SmartLunch\SL.DBHelper\bin\Debug\SL.DBHelper.dll.config
+D:\SmartLunch\SmartLunch\SmartLunch\SL.DBHelper\bin\Debug\SL.DBHelper.dll
+D:\SmartLunch\SmartLunch\SmartLunch\SL.DBHelper\bin\Debug\SL.DBHelper.pdb
+D:\SmartLunch\SmartLunch\SmartLunch\SL.DBHelper\bin\Debug\Oracle.ManagedDataAccess.dll
+D:\SmartLunch\SmartLunch\SmartLunch\SL.DBHelper\obj\Debug\SL.DBHelper.dll
+D:\SmartLunch\SmartLunch\SmartLunch\SL.DBHelper\obj\Debug\SL.DBHelper.pdb

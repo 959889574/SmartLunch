@@ -1,0 +1,352 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.hide{
+    display: none;
+}
+.container .bgCShade{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, .5)
+}
+.bgCShade .middleContent{
+    height: 87%;
+    overflow-y: auto;
+}
+.container .NoTxt{
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+}
+.container .bgCShade .commonBox{
+    width: 800px;
+    height: 554px;
+    background-color: #fff;
+    padding: 34px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 210px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+}
+/* 属性对比弹框 */
+.headTipsInfo{
+    margin-bottom: 10px;
+    width: 680px;
+}
+.headTipsInfo h1{
+    display: inline-block;
+    font-size: 16px;
+	font-weight: 700;
+	line-height: 32px;
+	color: rgb(102, 102, 102);
+}
+.headTipsInfo .fakerBtn{
+    height: 32px;
+    width: 64px;
+    color: #fff;
+    font-size: 14px;
+    line-height: 32px;
+    text-align: center;
+	color: #ffffff;
+    background-color: #4396e8;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.middleContent .listProperty{
+    width:680px;
+    border: solid 1px #e7e7eb;
+}
+.middleContent .listProperty .propertyItem{
+    height: 64px;
+    font-size: 12px;
+    line-height: 64px;
+    color: #4291ed;
+    display: flex;
+    flex-wrap: nowrap;
+    border-top: 1px solid #e7e7eb;
+}
+.middleContent .listProperty .propertyItem.Title{
+    height: 42px;
+    background-color: #f4f5f9;
+    color: #333333;
+    line-height: 42px;
+    border-top:none;
+}
+.middleContent .listProperty .propertyItem p{
+    width: 33.33%;
+    text-align: center;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+}
+.listProperty .propertyItem p span{
+    cursor: pointer;
+}
+
+/* 明细弹框 */
+.container .bgCShade .detailDiffModule{
+    padding-bottom: 100px;
+    box-sizing: border-box;
+}
+.detailDiffModule .listProperty .propertyItem p{
+    width: 18%;
+}
+.detailDiffModule .listProperty .propertyItem .widthB{
+    width: 28%;
+}
+.detailDiffModule .middleContent .bottomBtn{
+    height: 100px;
+    width: 230px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+.detailDiffModule .middleContent .bottomBtn div{
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    background-color: #4396e8;
+    border-radius: 4px;
+    font-size: 14px;
+	line-height: 40px;
+    color: #ffffff;
+    text-align: center;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+    cursor: pointer;
+}
+.middleContent .bottomBtn div:nth-child(1){
+    margin-right: 10px;
+}
+.detailDiffModule .difMode{
+    width:360px;
+    height: 242px;
+    padding: 20px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #fff;
+    border-top: 1px solid #e7e7eb;
+    box-shadow: 10px 10px 10px #e7e7eb;
+}
+.detailDiffModule .difMode .theTipsInfo{
+    line-height: 95px;
+    font-size: 16px;
+    text-align: center;
+    color: #333333;
+}
+.difMode .bottomBtn{
+    width: 215px;
+    margin: 0 auto;
+}
+.difMode .bottomBtn div{
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    background-color: #4396e8;
+    border-radius: 4px;
+    font-size: 14px;
+	line-height: 40px;
+    color: #ffffff;
+    text-align: center;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+    cursor: pointer;
+}
+.difMode .bottomBtn div:nth-child(1){
+    margin-right: 10px;
+}
+.difMode .closeZ{
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.commonBox .closeHeavy{
+    width: 33px;
+    height: 33px;
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    cursor: pointer;
+}
+/*  三级单列 选择代码名称弹框-------------------------------------------------------*/
+.bgCShade .singleColumnM{
+    width: 667px;
+    height: 762px;
+    padding: 30px 42px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ffffff;
+	box-shadow: 5px 8px 9px 1px 
+		rgba(9, 1, 4, 0.1);
+	border-radius: 4px;
+}
+.singleColumnM .closeZ{
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 12px;
+    right: 10px;
+    cursor: pointer;
+}
+.singleColumnM h1{
+    font-size: 16px;
+    color: #666666;
+    margin-bottom: 20px;
+    font-family: Arial;
+    font-weight: 700;
+}
+.headSelectArea{
+    margin-bottom: 10px;
+}
+.headSelectArea .selectCode,.headSelectArea .selectCondition{
+    width: 90px;
+    height: 34px;
+    background-color: #ffffff;
+    border: solid 1px #c9cace;
+    font-size: 12px;
+    color: #333333;
+    vertical-align: middle;
+    margin-right: 10px;
+    /* appearance:none;
+    -moz-appearance:none;
+    -webkit-appearance:none; */
+    padding-left: 10px;
+    box-sizing: border-box;
+    position: relative;
+
+}
+input[placeholder], [placeholder], *[placeholder] { 
+    font-size: 14px;
+	color: #999999;
+} 
+.headSelectArea .searchM{
+    height: 34px;
+    width: 299px;
+    background-color: #ffffff;
+    border: solid 1px #c9cace;
+    vertical-align: bottom;
+    padding-left: 10px;
+    box-sizing: border-box;
+    color: #333333;
+}
+.headSelectArea .searchBtn{
+    display: inline-block;
+    width: 61px;
+	height: 32px;
+    background-color: #3680d5;
+    border: 1px solid #3680d5;
+    border-radius: 3px;
+    font-size: 14px;
+	line-height: 32px;
+    text-align: center;
+    color: #ffffff;
+    vertical-align: middle;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.headSelectArea .searchBtn:active{
+    border: none;
+}
+.selectListArea{
+   height: 590px;
+   overflow-y: auto;
+}
+.selectList{
+    border: solid 1px #c9cace;
+    /*border-bottom: none;*/
+    border-top: none;
+}
+.listTitle{
+    display: flex;
+    flex-wrap: nowrap;
+    border: solid 1px #c9cace;
+    border-bottom: none;
+}
+.listTitle p{
+    width: 33.33%;
+    text-align: center;
+    height: 42px;
+    line-height: 42px;
+    background-color: #f6f6f6;
+    font-size: 14px;
+    color: #333333;
+    box-sizing: border-box;
+}
+.listTitle p:nth-child(2){
+    border-right: solid 1px #c9cace;
+    border-left: solid 1px #c9cace;
+    
+}
+
+.selectList .selectListItem{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.selectList .selectListItem p{
+    width: 33.33%;
+    height: 42px;
+    font-size: 12px;
+	line-height: 42px;
+	letter-spacing: 0px;
+    color: #333333;
+    text-align: center;
+    border-top: solid 1px #c9cace;
+    box-sizing: border-box;
+}
+.selectList .selectListItem p:nth-child(2){
+    border-right: solid 1px #c9cace;
+    border-left: solid 1px #c9cace;
+}
+.selectList .selectListItem:last-child{
+    border-bottom: solid 1px #c9cace;
+}
+.selectListItem .operationBtn{
+    color: #3680d5;
+    cursor: pointer;
+    appearance:none;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+}
+
+
+.propertyDiffModule .inp_ok{
+     height: 32px;
+    width: 64px;
+    color: #fff;
+    font-size: 14px;
+    line-height: 32px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #4396e8;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 1rem;    margin-left: auto;
+    margin-right: auto
+}
+
+
+

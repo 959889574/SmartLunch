@@ -1,0 +1,397 @@
+
+@font-face {font-family: "iconfont";
+    src: url('iconfont.eot?t=1536915733847'); /* IE9*/
+    src: url('iconfont.eot?t=1536915733847#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('data:application/x-font-woff;charset=utf-8;base64,d09GRgABAAAAAAUsAAsAAAAAB9gAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAABHU1VCAAABCAAAADMAAABCsP6z7U9TLzIAAAE8AAAARAAAAFY8oEhTY21hcAAAAYAAAABVAAABhmYi0SFnbHlmAAAB2AAAAVwAAAG4Mv7k52hlYWQAAAM0AAAALwAAADYSongnaGhlYQAAA2QAAAAcAAAAJAfeA4RobXR4AAADgAAAAAwAAAAMDAAAAGxvY2EAAAOMAAAACAAAAAgANgDcbWF4cAAAA5QAAAAfAAAAIAERAHRuYW1lAAADtAAAAUUAAAJtPlT+fXBvc3QAAAT8AAAALQAAAD4MlMj6eJxjYGRgYOBikGPQYWB0cfMJYeBgYGGAAJAMY05meiJQDMoDyrGAaQ4gZoOIAgCKIwNPAHicY2BkYWCcwMDKwMHUyXSGgYGhH0IzvmYwYuRgYGBiYGVmwAoC0lxTGByeaT1LZG7438AQw9zA0AAUZgTJAQDnygxueJztkEEOgCAMBGcBORgfYowP8mTC5/kGtkV/4SbTbbdwKbAA2TiNAroRrstSRZ5ZIy/xppqL1I/exoDPTbJdNU/+T5VfW9T9nZJfaxJ9m6AH5ksPcgAAAHicTY0xTsNAEEVnPN5Zdu1dg+PYIhERAmQ3CKSE2A2CigJRUFFxAE4AoYWKwA0Ql4CGGkucgUvkCGhhExQJafS/ZubNfECAny96oV3oAyisD8otqbDc4qxQyFk+bBTmw/qgCgxORWTZTdwtJ5HAqZuIKGF8wClb39/hk/Bzd+09Sry7G88xPnr3HACEPuudPugUzuAcLuEKAPewKiuWnKBFaXEDR+OyOcJjrJu6GeZFXgywyJfAQpfMvOo/H5fVHtJovN1hkDkUNTQlkP/tt/7eYnChOzrrbxZGZ9oyiX0UtMJGcpbymowNKxLBSmwGHBOFktADSEgcxqlOlZQoydwdHvZa54TAoG0xEIFzn28zIWZvr3MNRjIKJaKUbEzXmN5qGHY6yrJh8mNiGcYc73TTaMBWs0p1Nxa8bueRERmjC+1v+plK3f1JcCGca/+lfT+L2esix+svXrBJyHicY2BkYGAA4uwEC7t4fpuvDNwsDCBw/eAsUQT9fzsLA7MnkMvBwAQSBQAMFAmQAHicY2BkYGBu+N/AEMPCAAJAkpEBFTADAEcJAmwEAAAABAAAAAQAAAAAAAAAADYA3HicY2BkYGBgZshgYGEAASYg5gJCBob/YD4DABMfAYYAeJxlj01OwzAQhV/6B6QSqqhgh+QFYgEo/RGrblhUavdddN+mTpsqiSPHrdQDcB6OwAk4AtyAO/BIJ5s2lsffvHljTwDc4Acejt8t95E9XDI7cg0XuBeuU38QbpBfhJto41W4Rf1N2MczpsJtdGF5g9e4YvaEd2EPHXwI13CNT+E69S/hBvlbuIk7/Aq30PHqwj7mXle4jUcv9sdWL5xeqeVBxaHJIpM5v4KZXu+Sha3S6pxrW8QmU4OgX0lTnWlb3VPs10PnIhVZk6oJqzpJjMqt2erQBRvn8lGvF4kehCblWGP+tsYCjnEFhSUOjDFCGGSIyujoO1Vm9K+xQ8Jee1Y9zed0WxTU/3OFAQL0z1xTurLSeTpPgT1fG1J1dCtuy56UNJFezUkSskJe1rZUQuoBNmVXjhF6XNGJPyhnSP8ACVpuyAAAAHicY2BigAAuBuyAmZGJkZmRhYEtvTQxLymTOzM5P684tcTA0MSYgQEAUW0GYAAAAA==') format('woff'),
+    url('iconfont.ttf?t=1536915733847') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+    url('iconfont.svg?t=1536915733847#iconfont') format('svg'); /* iOS 4.1- */
+  }
+  
+  .iconfont {
+    font-family:"iconfont" !important;
+    font-size:16px;
+    font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-guanbi:before { content: "\e661"; }
+  
+  .icon-iconset0143:before { content: "\e62a"; }
+  
+*{
+    font-family: PingFang SC;
+    font-size: 16px;
+    color: #333;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+.containerGetImgPage{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.containerGetImgPage .Layout{
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+}
+.openImgM .openImgcontentM{
+    width: 466px;
+    height: 278px;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 1px dashed gray;
+    padding-top: 50px;
+    box-sizing: border-box;
+}
+.openImgM .openImgcontentM .btnOpenImg{
+    display: block;
+    width: 225px;
+    height: 40px;
+    background-color: #169bd5;
+    color: white;
+    font-size: 20px;
+    border-radius: 5px;
+    line-height: 40px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    padding: 0 20px;
+}
+.openImgM .openImgcontentM .selectType{
+    font-size: 16px;
+    text-align: center;
+    color: #333;
+    margin-bottom: 17px;
+    cursor: pointer;
+}
+.openImgcontentM .selectType .typeTxt{
+    color: #0000ff;
+}
+.openImgcontentM .selectType .icon-bianji{
+    color: #000;
+    font-size: 18px;
+    vertical-align: middle;
+}
+.imgExamples{
+    text-align: center;
+    cursor: pointer;
+}
+.imgExamples .icon-iconset0143{
+    font-size: 20px; 
+    color: #000;
+    vertical-align: middle;
+}
+.imgBox img{
+    display: block;
+    width: 100%;
+    height: 300px;  
+}
+.selectCategoryM{
+    width: 700px;
+    height: 520px;
+    border: 1px solid #f4f4f4;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #fff;
+    z-index: 9;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.clearfix{
+    zoom: 1;
+}
+.padding{
+    padding: 0 35px;
+}
+.hide{
+    display: none;
+}
+.selectCategoryM .header{
+    height: 71px;
+    border-bottom: 1px solid #eee;
+    line-height: 71px;
+}
+.selectCategoryM .header{
+    font-weight: 600;
+    line-height: 71px;
+    color: #000;
+}
+.selectCategoryM .header .icon-guanbi{
+    font-size: 35px;
+    vertical-align: middle;
+}
+.selectTypeArea > p {
+    font-weight: 600;
+    line-height: 90px;
+    color: #000;
+}
+.typeLis{
+    display: flex;
+    flex-wrap: wrap;
+    height: 240px;
+    overflow-y: auto;
+    margin-bottom: 50px;
+}
+.typeLis .typeItem{
+    width: 90px;
+    height: 90px;
+    font-weight: 600;
+    border: 2px solid #cecece;
+    margin-bottom: 30px;
+    margin-right: 30px;
+    text-align: center;
+    padding-top: 35px;
+    box-sizing: border-box;
+}
+.typeItemOpen{
+    cursor: pointer;
+}
+.typeLis .typeItem >p{
+    color: #cecece;
+}
+.typeLis .typeItem.active{
+    border-color: #0077ff;
+}
+.typeLis .typeItem.active .typeName{
+    color: #000;
+}
+.typeLis .typeItem .typeStatus{
+    font-size: 14px;
+    font-weight: 400;
+}
+.selectCategoryM .bottomBtnA{
+    height: 82px;
+    background-color: #eee;
+    padding-top: 22px;
+    box-sizing: border-box;
+}
+.bottomBtnA .centerBox{
+    width: 315px;
+    margin: 0 auto;
+}
+.bottomBtnA .centerBox .BtnC{
+    width: 134px;
+    height: 40px;
+    border-radius: 5px;
+    line-height: 40px;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+}
+.bottomBtnA .centerBox .trueB{
+    background-color: #0077ff;
+    margin-right: 40px;
+}
+.bottomBtnA .centerBox .cancelB{
+    background-color: #999;
+}
+
+
+
+
+/*  选择完图片后的弹窗*/
+.showImgSelect{
+    width: 720px;
+    height: 400px;
+    position: absolute;
+    top: 40%;
+    left: 52%;
+    transform: translate(-50%,-50%)
+}
+.rightAreaBlock{
+    width: 180px;
+    height: 100%;
+    padding-top: 62px;
+    padding-left: 5px;
+}
+.showImgSelect .leftAreaBlock,.middleAreaBlock{
+    width: 260px;
+    height: 100%; 
+    padding: 50px 0;
+    box-sizing: border-box;
+    border: 1px solid #797979;
+    position: relative;
+}
+.middleAreaBlock .secondImgBox img{
+    display: block;
+    width: 100%;
+    height: 300px;
+}
+.middleAreaBlock{
+    border-left: none;
+}
+.rightAreaBlock .selectType .icon-bianji{
+    cursor: pointer;
+}
+.rightAreaBlock .selectType .typeTxt{
+    color: #0000ff;
+    cursor: pointer;
+}
+.re_SelectionImgB ,.supplementInfo{
+    padding-top: 10px;
+}
+.re_SelectionImgB .BtnB,.supplementInfo .BtnB{
+    display: block;
+    width: 169px;
+    height: 30px;
+    background-color: #169bd5;
+    border-radius: 5px;
+    margin: 0 auto;
+    color: #fff;
+    font-weight: 400;
+    font-family: PingFang;
+    font-size: 14px;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+.rightAreaBlock .selectType{
+    margin-bottom: 36px;
+}
+.priceInfo{
+    margin-bottom: 18px;
+}
+.priceInfo .redPrice{
+    color: #ff0000;
+}
+.rightAreaBlock .imgExamplesB{
+    color: #0000ff;
+    margin-bottom: 36px;
+    cursor: pointer;
+}
+.rightAreaBlock .imgExamples .icon-iconset0143{
+    vertical-align: middle;
+    font-size: 20px;
+    color: #333;
+}
+
+.comfirmRecognition .comfirmBtnC{
+    width: 140px;
+    height: 40px;
+    margin: 0 auto;
+    background-color: #169bd5;
+    border-radius: 5px;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    font-family: PingFang;
+    font-size: 15px;
+    cursor: pointer;
+}
+/* 图片示例 */
+.pictureExampleModule{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background-color: #fff;
+    z-index: 66;
+}
+
+.pictureExampleModule .picexample{
+    width:830px;
+    height: 370px;
+    border:1px solid #ccc;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    margin: 0 auto;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.pictureExampleModule .picexample .icon-guanbi{
+    font-size: 32px;
+    position: absolute;
+    top: 15px;
+    right: 5px;
+    cursor: pointer;
+}
+.pictureExampleModule .picexample>div{
+    width: 94%;
+    margin: 20px auto;
+}
+.pictureExampleModule .picexample>div>p{
+    width:100%;
+    font-size: 16px;
+    color:#000;
+}
+.pictureExampleModule .piccontet{
+    width: 100%;
+    margin-top: 28px;
+}
+.pictureExampleModule .piccontet .picleftshow{
+    width: 32%;
+}
+.pictureExampleModule .picleftshow>div{
+    width:220px;
+    height: 210px;
+    overflow: hidden;
+}
+.pictureExampleModule .picleftshow>i{
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../img/picstates.png) no-repeat;
+    background-size: 100px 50px;
+    background-position: 0 0;
+    margin: 4px 0 0 90px;
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+}
+.pictureExampleModule .picleftshow>div>img,
+.pictureExampleModule .picitem>div>img{
+    width:100%;
+    height: auto;
+}
+.pictureExampleModule .piccontet .picrightshow{
+    width: 68%;
+}
+.pictureExampleModule .picinfo ul{
+    margin-top: -6px;
+    max-height: 160px;
+    overflow-y:auto;
+}
+.pictureExampleModule .picinfo ul li{
+    color:#333;
+    font: 14px;
+    line-height: 20px;
+}
+.pictureExampleModule .picrightshow .picerror{
+    margin-top: 30px;
+    max-height: 360px;
+    overflow-y:auto;
+}
+.pictureExampleModule .picerror .picitem{
+    width: 33%;
+}
+.pictureExampleModule .picitem>div{
+    width: 144px;
+    height: 158px;
+    overflow: hidden;
+}
+.pictureExampleModule .picitem>i{
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: url(../img/picstates.png) no-repeat;
+    background-size: 60px 30px;
+    background-position: -30px 0;
+    margin: 4px 0 0 35%;
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+}

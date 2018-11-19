@@ -1,0 +1,8 @@
+D:\SmartLunch\SmartLunch\SmartLunch\SL.DBFactory\bin\Debug\SL.DBFactory.dll
+D:\SmartLunch\SmartLunch\SmartLunch\SL.DBFactory\bin\Debug\SL.DBFactory.pdb
+D:\SmartLunch\SmartLunch\SmartLunch\SL.DBFactory\bin\Debug\SL.DBHelper.dll
+D:\SmartLunch\SmartLunch\SmartLunch\SL.DBFactory\bin\Debug\Oracle.ManagedDataAccess.dll
+D:\SmartLunch\SmartLunch\SmartLunch\SL.DBFactory\bin\Debug\SL.DBHelper.pdb
+D:\SmartLunch\SmartLunch\SmartLunch\SL.DBFactory\obj\Debug\SL.DBFactory.csprojResolveAssemblyReference.cache
+D:\SmartLunch\SmartLunch\SmartLunch\SL.DBFactory\obj\Debug\SL.DBFactory.dll
+D:\SmartLunch\SmartLunch\SmartLunch\SL.DBFactory\obj\Debug\SL.DBFactory.pdb

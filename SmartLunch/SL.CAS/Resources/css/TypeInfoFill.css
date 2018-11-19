@@ -1,0 +1,209 @@
+body, html {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    color: #333;
+    font-size: 14px;
+    font-family: "Microsoft Yahei";
+}
+
+.containerTypeInfoFill {
+    height: 100%;
+    width: 100%;
+}
+
+.Layout {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.Layoutsmoll {
+    /*width: 520px;*/
+}
+
+.fixedItems .FItem {
+    margin-bottom: 10px;
+   
+}
+.fixedItems .FItemFloat {
+    float:left;
+   width:460px;
+}
+
+.containerTypeInfoFill .FItemValue {
+    height: 24px;
+    width: 60%;
+    font-size: 14px;
+    line-height: 24px;
+    border: 1px solid #e2e3ea;
+}
+
+.fixedItemArea {
+    width: 950px;
+    margin: 0 auto;
+    padding-top: 65px;
+    box-sizing: border-box;
+}
+
+.fixedItems .FItem p {
+    display: inline-block;
+    line-height: 24px;
+    margin-right: 20px;
+    width: 30%;
+    text-align: right;
+}
+
+.addAREA .TitleA {
+    height: 24px;
+    line-height: 24px;
+    cursor: pointer;
+}
+
+    .addAREA .TitleA p {
+        display: inline-block;
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .addAREA .TitleA i {
+        display: inline-block;
+        height: 20px;
+        width: 26px;
+        text-align: center;
+        line-height: 20px;
+        color: #fff;
+        background-color: #169bd5;
+        border-radius: 4px;
+        margin-left: 12rem;
+    }
+
+.addcolorArea {
+    margin-left: 17%;
+}
+
+    .addcolorArea .areaC {
+        width: 73%;
+        height: 24px;
+        font-size: 14px;
+        line-height: 24px;
+        border: 1px solid #e2e3ea;
+        margin-left: 55px;
+        margin-bottom: 20px;
+        padding-left: 5px;
+    }
+
+.addsizeArea {
+    margin-left: 17%;
+}
+
+    .addsizeArea .areaS {
+        width: 73%;
+        height: 24px;
+        font-size: 14px;
+        line-height: 24px;
+        border: 1px solid #e2e3ea;
+        margin-left: 55px;
+        margin-bottom: 20px;
+        padding-left: 5px;
+    }
+
+.areaRemarks {
+    margin-bottom: 30px;
+}
+
+    .areaRemarks .Remarks {
+        display: inline-block;
+        line-height: 24px;
+        margin-right: 20px;
+    }
+
+    .areaRemarks .Remarksinput {
+        height: 24px;
+        width: 65%;
+        font-size: 14px;
+        line-height: 24px;
+        border: 1px solid #e2e3ea;
+    }
+
+.keepField {
+    margin-bottom: 30px;
+}
+
+    .keepField .keepBtn {
+        width: 70px;
+        line-height: 24px;
+        background-color: #169bd5;
+        border-radius: 4px;
+        text-align: center;
+        cursor: pointer;
+    }
+
+.bottomBtnkeep .keepBtn {
+    width: 90px;
+    height: 24px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #169bd5;
+    line-height: 24px;
+    border-radius: 5px;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+
+.red_span {
+    color: red;
+}
+
+.item_sel {
+    width: 60%;
+}
+
+.color_sub {
+    display: inline-block;
+    height: 20px;
+    width: 26px;
+    text-align: center;
+    line-height: 20px;
+    color: #fff;
+    background-color: #169bd5;
+    border-radius: 4px;
+    cursor:pointer;
+}
+
+.gk_span {
+    display: inline-block;
+    font-size: 14px;
+    width: 15%;
+    text-align: right;
+}
+
+.mar_li {
+    padding-top: 2.5rem;
+}
+
+.left_sp {
+    margin-left: 2rem;
+    color: darkgrey;
+}
+.addcolorArea .clearfix {
+    margin-top:10px;
+}
+
+    .addcolorArea .clearfix li {
+        margin: 0 36px 10px 0;
+        cursor:pointer;
+    }
+    
+    .addsizeArea .clearfix {
+    margin-top:10px;
+}
+
+    .addsizeArea .clearfix li {
+        margin: 0 36px 10px 0;
+        cursor:pointer;
+    }

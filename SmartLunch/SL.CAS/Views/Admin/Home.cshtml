@@ -1,0 +1,360 @@
+﻿@{
+    Layout = null;
+}
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>首页</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Language" content="zh-CN" />
+    <meta content="all" name="robots" />
+    <meta name="Copyright" content="" />
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <link href="@Html.GetCssJsUrl("/Resources/css/basic.css?v=2")" rel="stylesheet">
+    <link href="@Html.GetCssJsUrl("/Resources/css/common.css?v=2")" rel="stylesheet">
+    <link href="@Html.GetCssJsUrl("/Resources/css/eyesight.css?v=1.1")" rel="stylesheet">
+</head>
+<body>
+    <div style="text-align:center;font-size:24px;height:300px;margin-top:10rem;">
+        今天,你吃了吗?
+    </div>
+    <div class="wrapper wrapperarticle" style="display:none">
+        <div class="wrapperinner">
+            <div class="indexheader">
+                <div>
+                    <h1><img src="@Html.GetCssJsUrl("/Resources/img/logo.png")" /></h1>
+                    <em></em>
+                </div>
+                <p>一键识别发布商品，简化1688平台商品发布操作，</p>
+                <p>降低电商门槛，从此电商不是梦，省力更省心！</p>
+            </div><!--indexheader ed-->
+            <div class="indexgoodsdata">
+                <a onclick="bsUrl()" href='#' class="startuse">开始使用</a>
+                <p>慧眼识货通过AI图像识别及机器学习技术，仅需对商品拍一张照片，可自动识别商品类目、属性，并形成数字化结构化的信息记录，简单、高效完成企业源头商品的数字化。通过AI智能文案生成技术，自动创作详情标题、描述，一键生成1688商品详情页，自动上架1688平台，帮您迈出B类电商之路第一步。</p>
+                <div class="indexlist">
+                    <ul class="clearfix">
+                        <li class="fl">
+                            <em></em>
+                            <i>类目下载</i>
+                        </li>
+                        <li class="fl">
+                            <em></em>
+                            <i>图像识别</i>
+                        </li>
+                        <li class="fl">
+                            <em></em>
+                            <i>文案生成</i>
+                        </li>
+                        <li class="fl">
+                            <em></em>
+                            <i>上架平台</i>
+                        </li>
+                    </ul>
+                </div>
+            </div><!--indexgoodsdata ed-->
+            <div class="indexopreastep">
+                <a href="javascript:;">操作步骤</a>
+                <div class="indexitems">
+                    <div class="indexitem clearfix">
+                        <div class="itemmany fl clearfix">
+                            <em class="fl">1</em>
+                            <div class="indexohoto fl">
+                                <i>手机拍照</i>
+                                <div>
+                                    <p>拍摄技巧</p>
+                                    <ul>
+                                        <li>1、商品正面完整，无遮挡</li>
+                                        <li>2、主体大小占比50%以上</li>
+                                        <li>3、图片清晰，光线适中</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div><!--itemmany ed-->
+                        <div class="itemless fl">
+                            <i></i>
+                        </div><!--itemless ed-->
+                    </div><!--indexitem ed-->
+
+                    <div class="indexitem clearfix">
+                        <div class="itemless fl">
+                            <i></i>
+                            <a href="javascript:;">确认识别</a>
+                        </div><!--itemless ed-->
+                        <div class="itemmany itemmove fl clearfix">
+                            <em class="fl">2</em>
+                            <div class="indexsure fl">
+                                <b>一键确认</b>
+                                <span>确认并上传照片</span>
+                            </div>
+                        </div><!--itemmany ed-->
+                    </div><!--indexitem ed-->
+
+                    <div class="indexitem clearfix">
+                        <div class="itemmany  fl clearfix">
+                            <em class="fl">3</em>
+                            <div class="indexsure fl">
+                                <b>生成商品信息</b>
+                                <span>识别系统后生成商品详细信息</span>
+                            </div>
+                        </div><!--itemmany ed-->
+                        <div class="itemless fl">
+                            <i></i>
+                        </div><!--itemless ed-->
+                    </div><!--indexitem ed-->
+
+                    <div class="indexitem clearfix">
+                        <div class="itemless fl">
+                            <i></i>
+                        </div><!--itemless ed-->
+                        <div class="itemmany itemmove fl clearfix">
+                            <em class="fl">4</em>
+                            <div class="indexsure fl">
+                                <b>上架平台</b>
+                                <span>确认商品信息后操作上架</span>
+                            </div>
+                        </div><!--itemmany ed-->
+                    </div><!--indexitem ed-->
+                </div>
+            </div><!--indexopreastep ed-->
+            <div class="indexdisplay">
+                <div class="displaytitle clearfix">
+                    <div class="fl">功能/模板</div>
+                    <div class="fl displaytitlecolor">基础版</div>
+                    <div class="fl">标准版</div>
+                    <div class="fl displaytitlecolor">精美版</div>
+                </div><!--displaytitle ed-->
+
+                <div class="displaylist clearfix">
+                    <div class="fl">商品图像识别</div>
+                    <div class="fl displaylistcolor"><i class="existmark"></i></div>
+                    <div class="fl"><i class="existmark"></i></div>
+                    <div class="fl displaylistcolor"><i class="existmark"></i></div>
+                </div><!--displaylist ed-->
+
+                <div class="displaylist clearfix">
+                    <div class="fl">吊牌文字识别</div>
+                    <div class="fl displaylistcolor"><i class="existmark"></i></div>
+                    <div class="fl"><i class="existmark"></i></div>
+                    <div class="fl displaylistcolor"><i class="existmark"></i></div>
+                </div><!--displaylist ed-->
+
+                <div class="displaylist clearfix">
+                    <div class="fl">30余项属性</div>
+                    <div class="fl displaylistcolor"><i class="existmark"></i></div>
+                    <div class="fl"><i class="existmark"></i></div>
+                    <div class="fl displaylistcolor"><i class="existmark"></i></div>
+                </div><!--displaylist ed-->
+
+                <div class="displaylist clearfix">
+                    <div class="fl">标题文案</div>
+                    <div class="fl displaylistcolor"><i class="existmark"></i></div>
+                    <div class="fl"><i class="existmark"></i></div>
+                    <div class="fl displaylistcolor"><i class="existmark"></i></div>
+                </div><!--displaylist ed-->
+
+                <div class="displaylist clearfix">
+                    <div class="fl">简易详情模板</div>
+                    <div class="fl displaylistcolor"><i class="existmark"></i></div>
+                    <div class="fl"><i class="uncertainty"></i></div>
+                    <div class="fl displaylistcolor"><i class="uncertainty"></i></div>
+                </div><!--displaylist ed-->
+
+                <div class="displaylist clearfix">
+                    <div class="fl">详情卖点文案</div>
+                    <div class="fl displaylistcolor"><i class="nonentity"></i></div>
+                    <div class="fl"><i class="existmark"></i></div>
+                    <div class="fl displaylistcolor"><i class="existmark"></i></div>
+                </div><!--displaylist ed-->
+
+                <div class="displaylist clearfix">
+                    <div class="fl">产品细节多图</div>
+                    <div class="fl displaylistcolor"><i class="nonentity"></i></div>
+                    <div class="fl"><i class="existmark"></i></div>
+                    <div class="fl displaylistcolor"><i class="existmark"></i></div>
+                </div><!--displaylist ed-->
+
+                <div class="displaylist clearfix">
+                    <div class="fl">标准详情模板</div>
+                    <div class="fl displaylistcolor"><i class="nonentity"></i></div>
+                    <div class="fl"><i class="existmark"></i></div>
+                    <div class="fl displaylistcolor"><i class="existmark"></i></div>
+                </div><!--displaylist ed-->
+
+                <div class="displaylist clearfix">
+                    <div class="fl">3D渲染互动模型</div>
+                    <div class="fl displaylistcolor"><i class="nonentity"></i></div>
+                    <div class="fl"><i class="nonentity"></i></div>
+                    <div class="fl displaylistcolor"><i class="existmark"></i></div>
+                </div><!--displaylist ed-->
+
+                <div class="displaylist clearfix">
+                    <div class="fl">3D视频</div>
+                    <div class="fl displaylistcolor"><i class="nonentity"></i></div>
+                    <div class="fl"><i class="nonentity"></i></div>
+                    <div class="fl displaylistcolor"><i class="existmark"></i></div>
+                </div><!--displaylist ed-->
+
+                <div class="displayprice clearfix">
+                    <div class="fl">
+                        <em>市场价</em>
+                        <b>推广价</b>
+                    </div>
+                    <div class="fl displaypricecolor">
+                        <em>5元一次</em>
+                        <b>3元一次</b>
+                    </div>
+                    <div class="fl">
+                        <em>100元一次</em>
+                        <b>50元一次</b>
+                    </div>
+                    <div class="fl displaypricecolor">
+                        <em>300元一次</em>
+                        <b>100元一次</b>
+                    </div>
+                </div><!--displaylist ed-->
+
+            </div><!--indexdisplay ed-->
+            <div class="indexexp clearfix">
+                <div class="indexexplist fl">
+                    <div class="indexexplistinner">
+                        <div>
+                            <div>
+                                <b>电商</b>
+                                <em>刚需</em>
+                            </div>
+                        </div>
+                        <i>41%痛点需求</i>
+                        <p>商品上新是最新调研报告中电商经营痛点TOP3</p>
+                    </div>
+                </div><!--indexexplist ed-->
+                <div class="indexexplist fl">
+                    <div class="indexexplistinner">
+                        <div>
+                            <div>
+                                <b>创新</b>
+
+                                <em>科技</em>
+                            </div>
+                        </div>
+                        <i>3大核心技术</i>
+                        <p>图像识别、文案合成、3D渲染前沿人工智能黑科技</p>
+                    </div>
+                </div><!--indexexplist ed-->
+                <div class="indexexplist fl">
+                    <div class="indexexplistinner">
+                        <div>
+                            <div>
+                                <b>降低</b>
+                                <em>成本</em>
+                            </div>
+                        </div>
+                        <i>50%</i>
+                        <p>单件上新成本高于200元的用户占比60%，单条offer成本降低至少50%</p>
+                    </div>
+                </div><!--indexexplist ed-->
+                <div class="indexexplist fl">
+                    <div class="indexexplistinner">
+                        <div>
+                            <div>
+                                <b>提升</b>
+                                <em>效率</em>
+                            </div>
+                        </div>
+                        <i>30倍</i>
+                        <p>单件精美offer上架仅需15分钟，有效提升上新效率30倍</p>
+                    </div>
+                </div><!--indexexplist ed-->
+            </div><!--indexexp ed-->
+            <div class="indexbottom">
+                <p>新品首发期：10月15日-11月15日</p>
+                <em>免费抢先体验！</em>
+            </div><!--indexbottom ed-->
+        </div>       
+    </div>
+    <div class="layer none"></div>
+    <div class="indexcover none">
+        <div class="incoclose"><i></i></div><!--incoclose ed-->
+        <h4>选择模板</h4>
+        <div class="incomain">
+            <div class="incotitle clearfix">
+                <div class="fl">
+                    <div>版本</div>
+                </div>
+                <div class="fl incotitlecolor">
+                    <div>价格(元/次)</div>
+                </div>
+                <div class="fl">
+                    <div class="aa">图像识别属性</div>
+                </div>
+                <div class="fl incotitlecolor">
+                    <div>精美文案</div>
+                </div>
+                <div class="fl">
+                    <div>细节切图及描述</div>
+                </div>
+                <div class="fl incotitlecolor">
+                    <div>3D建模及视频</div>
+                </div>
+            </div><!--incotitle ed-->
+            <div class="incolist clearfix">
+                <div class="fl">基础版</div>
+                <div class="fl incolistcolor">
+                    <em>3</em>
+                    <i>5</i>
+                </div>
+                <div class="fl"><b class="existmark"></b></div>
+                <div class="fl incolistcolor"><b class="nonentity"></b></div>
+                <div class="fl"><b class="nonentity"></b></div>
+                <div class="fl incolistcolor"><b class="nonentity"></b></div>
+            </div><!--incolist ed-->
+            <div class="incolist clearfix">
+                <div class="fl">标准版</div>
+                <div class="fl incolistcolor">
+                    <em>50</em>
+                    <i>100</i>
+                </div>
+                <div class="fl"><b class="existmark"></b></div>
+                <div class="fl incolistcolor"><b class="existmark"></b></div>
+                <div class="fl"><b class="existmark"></b></div>
+                <div class="fl incolistcolor"><b class="nonentity"></b></div>
+            </div><!--incolist ed-->
+            <div class="incolist clearfix">
+                <div class="fl">精美版</div>
+                <div class="fl incolistcolor">
+                    <em>100</em>
+                    <i>300</i>
+                </div>
+                <div class="fl"><b class="existmark"></b></div>
+                <div class="fl incolistcolor"><b class="existmark"></b></div>
+                <div class="fl"><b class="existmark"></b></div>
+                <div class="fl incolistcolor"><b class="existmark"></b></div>
+            </div><!--incolist ed-->
+        </div><!--incomain ed-->
+        <p>注：使用精美版前，请先购买3D扫描设备，<a href="javascript:;">点击此处购买</a></p>
+        <div class="incoselect">
+            @*<a href="javascript:;" class="select">基础版</a>
+            <a href="javascript:;">标准版</a>
+            <a href="javascript:;">精美版</a>*@
+        </div><!--incoselect ed-->
+        <div class="incobtn">
+            <button onclick="BuyAndUse()">购买并使用</button>
+        </div><!--incobtn ed-->
+    </div><!--indexcover ed-->
+
+    <script src="@Html.GetCssJsUrl("/Resources/js/jquery-1.9.1.min.js")"></script>
+    <script src="@Html.GetCssJsUrl("/Resources/js/function.js")"></script>
+    <script>
+       
+    //获取url参数方法
+    function getQueryString(name) {
+        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+        var r = window.location.search.substr(1).match(reg);
+        if (r != null) return unescape(r[2]); return null;
+    }
+     
+    </script>
+</body>
+</html>
